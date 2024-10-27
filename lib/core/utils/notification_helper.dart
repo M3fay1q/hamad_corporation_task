@@ -55,44 +55,6 @@ Future<void> showNotification(String message) async {
   );
 }
 
-// Future<void> showAccountExpirationNotification() async {
-//   const androidPlatformChannelSpecifics = AndroidNotificationDetails(
-//     'account_renewal_channel',
-//     'Account Expiration',
-//     channelDescription: 'Notifies about account expiration',
-//     importance: Importance.max,
-//     priority: Priority.high,
-//   );
-//   const platformChannelSpecifics =
-//       NotificationDetails(android: androidPlatformChannelSpecifics);
-//   await flutterLocalNotificationsPlugin.show(
-//     0,
-//     'Reminder',
-//     'Your account will expire in 1 minute. Please renew it.',
-//     platformChannelSpecifics,
-//     payload: 'item x',
-//   );
-// }
-
-// Future<void> showLogoutNotification() async {
-//   const androidPlatformChannelSpecifics = AndroidNotificationDetails(
-//     'account_renewal_channel',
-//     'Auto Logout',
-//     channelDescription: 'Notifies about automatic logout due to inactivity',
-//     importance: Importance.max,
-//     priority: Priority.high,
-//   );
-//   const platformChannelSpecifics =
-//       NotificationDetails(android: androidPlatformChannelSpecifics);
-//   await flutterLocalNotificationsPlugin.show(
-//     1,
-//     'Auto Logout',
-//     'You have been logged out due to inactivity.',
-//     platformChannelSpecifics,
-//   );
-// }
-
-// Show account expiration notification
 Future<void> showAccountExpirationNotification() async {
   const AndroidNotificationDetails androidPlatformChannelSpecifics =
       AndroidNotificationDetails(
@@ -112,7 +74,6 @@ Future<void> showAccountExpirationNotification() async {
   );
 }
 
-// Show logout notification
 Future<void> showLogoutNotification() async {
   const AndroidNotificationDetails androidPlatformChannelSpecifics =
       AndroidNotificationDetails(
