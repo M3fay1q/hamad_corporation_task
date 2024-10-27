@@ -1,6 +1,6 @@
 # Hamad Corporation Task
 
-This Flutter application provides user login, account management, and background notifications with a 2-minute automatic logout for inactivity. Notifications are managed by `flutter_local_notifications`, while background tasks are handled by `workmanager`.
+This Flutter application provides user login, account management, and background notifications with a 2-minute automatic logout for inactivity. Notifications are managed by `flutter_local_notifications`.
 
 ## Features
 
