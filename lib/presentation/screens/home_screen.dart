@@ -36,19 +36,19 @@ class _HomeScreenState extends State<HomeScreen> {
     Workmanager().registerOneOffTask(
       "1",
       "sessionMonitorTask",
-      initialDelay: const Duration(seconds: 5),
+      initialDelay: const Duration(minutes: 1),
     );
     Workmanager().registerOneOffTask(
       "2",
       "sessionMonitorTask",
-      initialDelay: const Duration(seconds: 10),
+      initialDelay: const Duration(minutes: 2),
     );
   }
 
   void startAndCancelTimer() {
     timer?.cancel();
     _startSessionTimers();
-    timer = Timer(const Duration(seconds: 12), () {
+    timer = Timer(const Duration(seconds: 122), () {
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(builder: (context) => LoginScreen()),

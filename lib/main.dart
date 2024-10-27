@@ -73,10 +73,10 @@ void callbackDispatcher() {
       DateTime startTime = DateTime.parse(startTimeString);
       Duration elapsed = DateTime.now().difference(startTime);
 
-      if (elapsed.inSeconds == 5) {
+      if (elapsed.inMinutes == 1) {
         await showAccountExpirationNotification();
       }
-      if (elapsed.inSeconds == 10) {
+      if (elapsed.inMilliseconds == 2) {
         await showLogoutNotification();
         await storage.deleteAll();
         await storage.write(key: 'shouldLogout', value: 'true');
